@@ -1,0 +1,16 @@
+Multiline Strings
+You can assign a multiline string to a variable by using three quotes:
+##
+Quotes Inside Quotes
+You can use quotes inside a string, as long as they don't match the quotes surrounding the string:
+##
+Strings are Arrays
+Like many other popular programming languages, strings in Python are arrays of unicode characters.
+However, Python does not have a character data type, a single character is simply a string with a length of 1.
+Square brackets can be used to access elements of the string.
+##
+Check String
+To check if a certain phrase or character is present in a string, we can use the keyword in.
+##
+Split String
+The split() method returns a list where the text between the specified separator becomes the list items.
