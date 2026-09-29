@@ -1,0 +1,17 @@
+Data Types
+
+Variables can store data of diffrent types and 
+Each type of data can perform diffrent things.
+
+text type: string 
+Numeric type: int flot complex
+sequence type: list tuple range 
+mapping type: dict
+set types: set , frozen set
+boolean type: boolean
+Binary type: Bytes 
+
+
+Type check of data using type() function 
+
+We can also set the type
