@@ -1,0 +1,17 @@
+tuple
+
+tuple is used to store multiple value in single variable.
+a tuple is colllection which is ordered and unchangeable.
+tuples can also be created without parentheses.
+tuples allow duplicate.
+the first item has index [0].
+ordered - means tuple have a define ordered and that order will not change.
+Unchangeable - means we can not add remove item after the tuple is created.
+you can not create a tuple with one item you have to put , after it . otherwise python will not reco. it as tuple
+we can create a empty tuple.
+can be add any of data types.
+it is also possible to create constructor of tuple.
+
+
+count()	Returns the number of times a specified value occurs in a tuple
+index()	Searches the tuple for a specified value and returns the position of where it was found
