@@ -1,0 +1,23 @@
+List
+
+List are use to store multiple value in single variable.
+it is built in data type like set, dict, tuple.
+List are creting  using a square bracket.
+List items are changabele and allow duplicate values.Means we can add, remove items in list.
+List items haved indexed first values have index[0].
+List allow duplicate.
+List allow any data type.
+It is also possible to create a list constructor when creating a new list 
+
+
+append()	Adds an element at the end of the list
+clear()	Removes all the elements from the list
+copy()	Returns a copy of the list
+count()	Returns the number of elements with the specified value
+extend()	Add the elements of a list (or any iterable), to the end of the current list
+index()	Returns the index of the first element with the specified value
+insert()	Adds an element at the specified position
+pop()	Removes the element at the specified position
+remove()	Removes the item with the specified value
+reverse()	Reverses the order of the list
+sort()	Sorts the list
