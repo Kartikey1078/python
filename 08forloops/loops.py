@@ -20,3 +20,5 @@ for x in data:
     for y in datanew:
         print(x,y)
 
+
+

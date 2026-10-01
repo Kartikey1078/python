@@ -1,0 +1,14 @@
+A function is a block of code which only runs when it is called.
+A function can return data as a result.
+A function helps avoiding code repetition.
+Functions can send data back to the code that called them using the return statement.
+When a function reaches a return statement, it stops executing and sends the result back:
+
+
+
+### Arguments
+Information can be passed into functions as arguments.
+Arguments are specified after the function name, inside the parentheses. You can add as many arguments as you want, just separate them with a comma.
+
+Default Parameter Values
+You can assign default values to parameters. If the function is called without an argument, it uses the default value:
