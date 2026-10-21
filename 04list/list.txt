@@ -3,7 +3,7 @@ List
 List are use to store multiple value in single variable.
 it is built in data type like set, dict, tuple.
 List are creting  using a square bracket.
-List items are changabele and allow duplicate values.Means we can add, remove items in list.
+List items are changabele and allow duplicate values. Means we can add, remove items in list.
 List items haved indexed first values have index[0].
 List allow duplicate.
 List allow any data type.

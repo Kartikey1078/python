@@ -58,6 +58,8 @@ print(new_txt.find("k")) #finds is use to find the index/position
 print(new_txt.count("i")) #find occurance of a particular number
 print(new_txt.startswith("H")) #find a the charter starts with or not
 print(new_txt.endswith(" ")) #find a the charter end with or not
+print(new_txt.isalpha()) ## check all the character is alpbhts 
+
 
 
 
