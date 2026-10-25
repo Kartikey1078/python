@@ -15,3 +15,5 @@ Binary type: Bytes
 Type check of data using type() function 
 
 We can also set the type
+
+
