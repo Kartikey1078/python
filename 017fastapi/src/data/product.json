@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Updated Apple",
+        "price": 203,
+        "category": "Fruits",
+        "stock": 70,
+        "id": 1
+    },
+    {
+        "id": 3,
+        "name": "Mango",
+        "price": 120,
+        "category": "Fruits",
+        "stock": 75
+    },
+    {
+        "id": 4,
+        "name": "Cashews",
+        "price": 950,
+        "category": "Dry Fruits",
+        "stock": 40
+    },
+    {
+        "id": 5,
+        "name": "Banana",
+        "price": 60,
+        "category": "Fruits",
+        "stock": 100
+    },
+    {
+        "name": "amrud",
+        "price": 850,
+        "category": "Dry Fruits",
+        "stock": 30,
+        "id": 6
+    }
+]

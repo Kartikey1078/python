@@ -1,0 +1,98 @@
+from __future__ import annotations
+
+import ssl
+import time
+from collections.abc import Iterable
+from typing import Any
+
+from .._types import SOCKET_OPTION
+
+
+class NetworkStream:
+    def read(self, max_bytes: int, timeout: float | None = None) -> bytes:
+        raise NotImplementedError()  # pragma: no cover
+
+    def write(self, buffer: bytes, timeout: float | None = None) -> None:
+        raise NotImplementedError()  # pragma: no cover
+
+    def close(self) -> None:
+        raise NotImplementedError()  # pragma: no cover
+
+    def start_tls(
+        self,
+        ssl_context: ssl.SSLContext,
+        server_hostname: str | None = None,
+        timeout: float | None = None,
+    ) -> NetworkStream:
+        raise NotImplementedError()  # pragma: no cover
+
+    def get_extra_info(self, info: str) -> Any:
+        return None  # pragma: no cover
+
+
+class NetworkBackend:
+    def connect_tcp(
+        self,
+        host: str,
+        port: int,
+        timeout: float | None = None,
+        local_address: str | None = None,
+        socket_options: Iterable[SOCKET_OPTION] | None = None,
+    ) -> NetworkStream:
+        raise NotImplementedError()  # pragma: no cover
+
+    def connect_unix_socket(
+        self,
+        path: str,
+        timeout: float | None = None,
+        socket_options: Iterable[SOCKET_OPTION] | None = None,
+    ) -> NetworkStream:
+        raise NotImplementedError()  # pragma: no cover
+
+    def sleep(self, seconds: float) -> None:
+        time.sleep(seconds)  # pragma: no cover
+
+
+class AsyncNetworkStream:
+    async def read(self, max_bytes: int, timeout: float | None = None) -> bytes:
+        raise NotImplementedError()  # pragma: no cover
+
+    async def write(self, buffer: bytes, timeout: float | None = None) -> None:
+        raise NotImplementedError()  # pragma: no cover
+
+    async def aclose(self) -> None:
+        raise NotImplementedError()  # pragma: no cover
+
+    async def start_tls(
+        self,
+        ssl_context: ssl.SSLContext,
+        server_hostname: str | None = None,
+        timeout: float | None = None,
+    ) -> AsyncNetworkStream:
+        raise NotImplementedError()  # pragma: no cover
+
+    def get_extra_info(self, info: str) -> Any:
+        return None  # pragma: no cover
+
+
+class AsyncNetworkBackend:
+    async def connect_tcp(
+        self,
+        host: str,
+        port: int,
+        timeout: float | None = None,
+        local_address: str | None = None,
+        socket_options: Iterable[SOCKET_OPTION] | None = None,
+    ) -> AsyncNetworkStream:
+        raise NotImplementedError()  # pragma: no cover
+
+    async def connect_unix_socket(
+        self,
+        path: str,
+        timeout: float | None = None,
+        socket_options: Iterable[SOCKET_OPTION] | None = None,
+    ) -> AsyncNetworkStream:
+        raise NotImplementedError()  # pragma: no cover
+
+    async def sleep(self, seconds: float) -> None:
+        raise NotImplementedError()  # pragma: no cover
